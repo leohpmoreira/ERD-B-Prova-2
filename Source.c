@@ -116,11 +116,11 @@ int menu() {	//Menu com seletor
 		printf("\t\300\304\304\304\301\304\304\304\304\304\304\304\304\304\304\304\304\304\304\304\304\304\304\304\304\304\304\304\304\304\304\304\304\304\304\304\304\304\304\304\304\304\304\304\304\304\304\304\304\304\304\304\304\304\304\304\304\304\304\304\304\304\304\304\304\304\304\304\304\304\304\304\331\n\n\t");
 		fgets(input, sizeof(input), stdin);
 		selector = strtol(input, NULL, 0);
-		if (selector < 1 || selector>4) {
+		if (selector < 1 || selector>3) {
 			printf("\n\tOpcao invalida.\n\t");
 			system("pause");
 		}
-	} while (selector < 1 || selector>4);
+	} while (selector < 1 || selector>3);
 
 	return selector;
 }
